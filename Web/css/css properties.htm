@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css properties</title>
+<style>
+    header{
+     background-color: coral;
+     color: darkred;
+        background-attachment: fixed;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .man{
+        color: crimson;
+        background-position: center;
+    }
+    footer{
+    text-align: center;
+    }
+    .first{
+        width: 1234px;
+        height: 268px;
+    }
+    .end{
+background-position: center;
+    }
+    nav{
+        background-color: aquamarine;
+        color: saddlebrown;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li style="display: inline-block;width: 48px;">Home </li>
+        <li style="display: inline-block;">Course </li>
+        <li style="display: inline-block;width: 56px;">Web </li>
+        <li>Series </li>
+        <li>Help</li>    
+    
+    </ul></nav>
+    <header>
+        <h1>Welcome to Home page </h1>
+        
+    </header>
+    <div class="first">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea 
+consequuntur neque, accusantium omnis placeat incidunt provident 
+recusandae veritatis facilis laborum eum corrupti! Cumque laboriosam 
+quam ex quaerat! Repellendus, obcaecati.
+    </div>
+  
+    <footer>
+       <div class="end">
+        thanks for comming
+       </div> 
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
