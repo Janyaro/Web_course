@@ -26,8 +26,9 @@ public class classTask2 {
     bike [0] = b1;
     // Syst=em.out.println(car);
     // pass derived class super class object  
-        // bike[0]=a1;//error occcur int this statement
+        //bike[0]=a1;//error occcur int this statement
         // car.getClass();
         System.out.println(car.getClass());
+        System.out.println(car[0]);
     }
 }

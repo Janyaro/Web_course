@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+<style>
+    .container{
+        background-color:red ;
+        height: 100vh;
+    
+    }
+    .box{
+        display: inline-block;
+        transform: translate(159px ) ;
+        transform: rotate(45deg);
+        transform-origin: 0px;
+        width: 30rem ;
+        height: 50rem;
+    }
+    img:hover{
+        /* width: 49px; */
+        height: 10vh;
+    /* transition-property:width ; */
+    transition-property: height;
+    transition-duration: .2s;
+    transition-timing-function: ease-in; 
+    }
+</style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="box">
+            <img  src="https://source.unsplash.com/random/?city,night" alt="unsplash pic dsss" width="540px" height="129px">
+       <button id="myimage">  toogle </button>
+        </div>
+    </div>
+</body>
+<!-- <script>
+id.addEventListener("click"  ()=>{
+
+})
+</script> -->
+</html>

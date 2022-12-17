@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property</title>
+
+<style>
+div{
+    display: inline-block;
+    width: 50vw;
+  transform: translate(123px , 50%);
+  transform: skew();
+}
+/* img:hover{
+    width: 400px;
+    height: 300px;
+    transition-property:width height ;
+    transition-duration: 2s;
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function:ease-out; */
+ /* */ 
+</style>
+
+</head>
+<body>
+    <div>
+    <img id = "myimage" src="/photo-1669802004186-31c3cf5eb4ad.avif" width="360px" height="240px" alt="">
+    <button id="btn">toogle</button>
+</div>
+</body>
+<script>
+    btn.addEventListener("click" , ()=>{
+        myimage.style.width = "580px";
+    })
+</script> 
+</html>
