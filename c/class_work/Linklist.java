@@ -6,6 +6,8 @@ class Node {
     Node(int data){
         this.data=data;
     }
+    public Node(int data2, Node next2) {
+    }
 }
 public class Linklist {
    public static void main(String[] args) {

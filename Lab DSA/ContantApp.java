@@ -1,4 +1,3 @@
-package c.class_work.Lab_task;
 
 public class ContantApp {
 // Add contact 
@@ -22,9 +21,11 @@ public class ContantApp {
  }   
 
 // disply all contact
- public void disply(String [] a) {
-    for (String number: a) {
-        System.out.println(number);
+ public void disply(String [][] num) {
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 2; j++) {
+            System.out.println(num[i][j]);
+        }
     }
  }
  // Search number 

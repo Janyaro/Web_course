@@ -1,4 +1,4 @@
-package c.class_work.Lab_task;
+
 public class FireAir {
     public void disply(String [] d)throws Exception{
         for (String list : d) {

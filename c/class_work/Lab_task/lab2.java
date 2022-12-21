@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class lab2 {
     public static void main(String[] args) {
         Scanner sc =  new Scanner(System.in);
-   ContantApp c = new ContantApp();
-   String [] number = {"443-966-9591","563-571-1996","210-510-2970","360-367-0724"};
+   Contact_App c = new Contact_App();
+
+   
 do {
     System.out.println("1 :Disply number ");
     System.out.println("2 :Search number ");
@@ -56,4 +57,30 @@ do {
 } while (true);   
 }
 
+
+}
+
+class contact_App{
+    String [][] num;
+    String [] number = {"443-966-9591","563-571-1996","210-510-2970","360-367-0724"};
+   String [] name = {"waseem","rizwan","saim","umair"};
+   String [][] contactApp = new contactApp [number.length][name.length];
+      contact_App(String [][] num){
+        this.contactApp=num;
+    }
+    public void convertTwo(String []number , String [] name , String [][] contactApp) {
+        for (int i = 0; i < number.length; i++) {
+            for (int j = 0; j < name.length; j++) {
+                contactApp[i][0]=number[i];
+                contactApp[i][1]=name[j];
+            }
+    }}
+    public void disply() {
+     for (int i = 0; i < contactApp.length; i++) {
+        for (int j = 0; j < 2; j++) {
+            System.out.print(contactApp[i][j] + "  ");
+        }
+        System.out.println();
+     }   
+    }
 }
